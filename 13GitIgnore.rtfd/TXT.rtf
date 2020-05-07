@@ -1,0 +1,238 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fmodern\fcharset0 Courier;
+\f3\fswiss\fcharset0 Helvetica-Oblique;\f4\fmodern\fcharset0 Courier-Oblique;}
+{\colortbl;\red255\green255\blue255;\red35\green46\blue57;\red62\green62\blue62;\red14\green32\blue46;
+\red245\green245\blue246;\red21\green163\blue221;\red255\green255\blue255;\red106\green133\blue157;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c18039\c23922\c28627;\cssrgb\c30980\c30980\c30980;\cssrgb\c5882\c16863\c23922;
+\cssrgb\c96863\c96863\c97255;\cssrgb\c784\c70196\c89412;\cssrgb\c100000\c100000\c100000;\cssrgb\c49020\c59216\c67843;\cssrgb\c0\c0\c0;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid2\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33100\viewh20200\viewkind0
+\deftab720
+\pard\pardeftab720\sl533\sa100\partightenfactor0
+
+\f0\b\fs40 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Why Should Files Be Ignored\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f1\b0\fs24 \cf3 \strokec3 Remember a couple sections back when we were learning about\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 git add
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 ? Instead of adding the files one by one, there was a special character that we could use to indicate the current directory and all subdirectories. Do you remember what that character is?\
+That's right, the period (
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 )!\
+\pard\pardeftab720\sl480\sa100\partightenfactor0
+
+\f0\b\fs36 \cf2 \strokec2 The Problem\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f1\b0\fs24 \cf3 \strokec3 Let's say you add a file like a Word document to the directory where your project is stored\'a0
+\f3\i but don't want it added to the repository
+\f1\i0 . (You can simulate adding a Word document by running\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 touch project.docx
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 ) Git will see this new file, so if you run\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0it'll show up in the list of files.\
+\pard\pardeftab720\sl400\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://classroom.udacity.com/nanodegrees/nd104-ent/parts/e325d5cc-ccd1-4ca8-a562-7eed09ab76c7/modules/a141ebc6-acee-494b-927f-2016d6fe0f9c/lessons/950113cc-8d4b-4346-b03f-8872ded1c0a6/concepts/d4275710-06eb-431c-bec6-13a202f1dfbb#"}}{\fldrslt 
+\fs30 \cf6 \cb7 \strokec6 \
+\pard\pardeftab720\sl400\qc\partightenfactor0
+
+\f3\i\fs24 \cf2 \cb1 \strokec2 The Terminal application showing the output of the\'a0
+\f4 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f3 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0command. The output shows a new Word document that is in Git's "Untracked files" section.
+\f1\i0 \
+}}\pard\pardeftab720\sl400\partightenfactor0
+\cf3 The potential problem with having this file in your project is that, because\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 git add .
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0adds\'a0
+\f3\i all
+\f1\i0 \'a0files, the Word document might get accidentally committed to the repository.\
+\pard\pardeftab720\sl533\sa100\partightenfactor0
+
+\f0\b\fs40 \cf2 \strokec2 Git Ignore\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f1\b0\fs24 \cf3 \strokec3 If you want to keep a file in your project's directory structure but make sure it isn't accidentally committed to the project, you can use the specially named file,\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .gitignore
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0(note the dot at the front, it's important!). Add this file to your project in the same directory that the hidden\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .git
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0directory is located. All you have to do is list the\'a0
+\f3\i names
+\f1\i0 \'a0of files that you want Git to ignore (not track) and it will ignore them.\
+Let's try it with the "project.docx" file. Add the following line inside the\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .gitignore
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0file:\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 project.docx\uc0\u8236 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 Now run\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0and check its output:\
+\pard\pardeftab720\sl400\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://classroom.udacity.com/nanodegrees/nd104-ent/parts/e325d5cc-ccd1-4ca8-a562-7eed09ab76c7/modules/a141ebc6-acee-494b-927f-2016d6fe0f9c/lessons/950113cc-8d4b-4346-b03f-8872ded1c0a6/concepts/d4275710-06eb-431c-bec6-13a202f1dfbb#"}}{\fldrslt 
+\fs30 \cf6 \cb7 \strokec6 \pard\pardeftab720\sl400\qc\partightenfactor0
+\cf6 \
+\pard\pardeftab720\sl400\qc\partightenfactor0
+
+\f3\i\fs24 \cf2 \cb1 \strokec2 The Terminal application showing the output of\'a0
+\f4 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f3 \cf2 \cb1 \strokec2 \uc0\u8236 . The Word document is no longer listed as an untracked file. The new ".gitignore" file is listed, though.
+\f1\i0 \
+}}\pard\pardeftab720\sl400\partightenfactor0
+\cf3 Git knows to look at the contents of a file with the name\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .gitignore
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 . Since it saw "project.docx" in it, it ignored that file and doesn't show it in the output of\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 .\
+\pard\pardeftab720\sl533\sa100\partightenfactor0
+
+\f0\b\fs40 \cf2 \strokec2 Globbing Crash Course\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f1\b0\fs24 \cf3 \strokec3 Let's say that you add 50 images to your project, but want Git to ignore all of them. Does this mean you have to list each and every filename in the\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .gitignore
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0file? Oh gosh no, that would be crazy! Instead, you can use a concept called\'a0{\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Glob_(programming"}}{\fldrslt \cf6 \strokec6 globbing}}.\
+Globbing lets you use special characters to match patterns/characters. In the\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .gitignore
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0file, you can use the following:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400\partightenfactor0
+\ls1\ilvl0\cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 blank lines can be used for spacing\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400\partightenfactor0
+\ls1\ilvl0
+\f2 \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u8237 #
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0- marks line as a comment\
+\ls1\ilvl0
+\f2 \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u8237 *
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0- matches 0 or more characters\
+\ls1\ilvl0
+\f2 \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u8237 ?
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0- matches 1 character\
+\ls1\ilvl0
+\f2 \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u8237 [abc]
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0- matches a, b, _or_ c\
+\ls1\ilvl0
+\f2 \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u8237 **
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0- matches nested directories -\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 a/**/z
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0matches\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl400\partightenfactor0
+\ls1\ilvl1\cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 a/z\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 a/b/z\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 a/b/c/z\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+\cf3 So if all of the 50 images are JPEG images in the "samples" folder, we could add the following line to\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .gitignore
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0to have Git ignore all 50 images.\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 samples/*.jpg\uc0\u8236 \
+\pard\pardeftab720\sl373\sa200\partightenfactor0
+
+\f0\b\fs28 \cf8 \cb7 \strokec8 \uc0\u8236 QUESTION 1 OF 2\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f1\b0\fs24 \cf2 \cb7 \strokec2 Which of the following files will be ignored if\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 *.png
+\f1 \cf2 \cb7 \strokec2 \uc0\u8236 \'a0is entered into the\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .gitignore
+\f1 \cf2 \cb7 \strokec2 \uc0\u8236 \'a0file?\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320\partightenfactor0
+\ls2\ilvl0
+\fs21 \cf9 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec9 \uc0\u8232 
+\fs24 \cf3 \cb7 \strokec3 ocean.jpg\cb1 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 
+\fs21 \uc0\u8232 \u8232 
+\fs24 \cb7 trees.png\cb1 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 
+\fs21 \cf9 \strokec9 \uc0\u8232 
+\fs24 \cf3 \cb7 \strokec3 png-format.pdf\cb1 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 
+\fs21 \uc0\u8232 \u8232 \cf9 \strokec9 \uc0\u8232 
+\fs24 \cf3 \cb7 \strokec3 not-a-png.jpeg\cb1 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 
+\fs21 \uc0\u8232 \u8232 
+\fs24 \cb7 bg-pattern.png\cb1 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 
+\fs21 \cf9 \strokec9 \uc0\u8232 
+\fs24 \cf3 \cb7 \strokec3 logo.gif\cb1 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 
+\fs21 \uc0\u8232 \u8232 
+\fs24 \cb7 LOUDFILE.PNG\cb1 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 
+\fs30 \
+\pard\pardeftab720\sl360\qr\partightenfactor0
+
+\f0\b\fs19\fsmilli9750 \cf7 \cb6 \strokec7 SUBMIT
+\f1\b0\fs30 \cf3 \cb1 \strokec3 \
+\pard\pardeftab720\sl373\sa200\partightenfactor0
+
+\f0\b\fs28 \cf8 \cb7 \strokec8 QUESTION 2 OF 2\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f1\b0\fs24 \cf2 \cb7 \strokec2 If you ask Git to ignore "be?rs", which of the following filenames will be ignored?\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400\partightenfactor0
+\ls3\ilvl0\cf3 \cb7 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 bears\cb1 \uc0\u8232 
+\fs21 \cf9 \strokec9 \uc0\u8232 
+\fs24 \cf3 \cb7 \strokec3 beavers\cb1 \uc0\u8232 
+\fs21 \cf9 \strokec9 \uc0\u8232 
+\fs24 \cf3 \cb7 \strokec3 BeArS
+\fs28 \cb1 \uc0\u8232 
+\fs21 \uc0\u8232 
+\fs24 \cb7 beers
+\fs28 \cb1 \uc0\u8232 
+\fs21 \cf9 \strokec9 \uc0\u8232 
+\fs24 \cf3 \cb7 \strokec3 boars\cb1 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 
+\fs21 \uc0\u8232 \u8232 
+\fs30 \
+\pard\pardeftab720\sl360\qr\partightenfactor0
+
+\f0\b\fs19\fsmilli9750 \cf7 \cb6 \strokec7 SUBMIT
+\f1\b0\fs30 \cf3 \cb1 \strokec3 \
+\pard\pardeftab720\sl533\sa100\partightenfactor0
+
+\f0\b\fs40 \cf2 \strokec2 Git Ignore Recap\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f1\b0\fs24 \cf3 \strokec3 To recap, the\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .gitignore
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0file is used to tell Git about the files that Git should not track. This file should be placed in the same directory that the\'a0
+\f2 \cf4 \cb5 \strokec4 \uc0\u8237 .git
+\f1 \cf3 \cb1 \strokec3 \uc0\u8236 \'a0directory is in.\
+\pard\pardeftab720\sl480\sa100\partightenfactor0
+
+\f0\b\fs36 \cf2 \strokec2 Further Research\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400\partightenfactor0
+\ls4\ilvl0
+\f1\b0\fs24 \cf6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files"}}{\fldrslt \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 Ignoring files}}\cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 \'a0from the Git Book\
+\ls4\ilvl0\cf6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://git-scm.com/docs/gitignore#_pattern_format"}}{\fldrslt \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 gitignore}}\cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 \'a0from the Git Docs\
+\ls4\ilvl0\cf6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://help.github.com/articles/ignoring-files/"}}{\fldrslt \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 Ignoring files}}\cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 \'a0from the GitHub Docs\
+\ls4\ilvl0\cf6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://www.gitignore.io/"}}{\fldrslt \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 gitignore.io}}\cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 \
+}

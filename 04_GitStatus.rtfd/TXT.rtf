@@ -1,0 +1,277 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;\f2\fswiss\fcharset0 Helvetica-Oblique;
+\f3\fswiss\fcharset0 Helvetica-Bold;\f4\fmodern\fcharset0 Courier-Oblique;\f5\fnil\fcharset0 AppleColorEmoji;
+\f6\fswiss\fcharset0 Helvetica-BoldOblique;\f7\fswiss\fcharset0 Helvetica-LightOblique;}
+{\colortbl;\red255\green255\blue255;\red62\green62\blue62;\red21\green163\blue221;\red14\green32\blue46;
+\red245\green245\blue246;\red106\green133\blue157;\red255\green255\blue255;\red35\green46\blue57;\red0\green0\blue0;
+\red210\green0\blue53;\red14\green114\blue164;}
+{\*\expandedcolortbl;;\cssrgb\c30980\c30980\c30980;\cssrgb\c784\c70196\c89412;\cssrgb\c5882\c16863\c23922;
+\cssrgb\c96863\c96863\c97255;\cssrgb\c49020\c59216\c67843;\cssrgb\c100000\c100000\c100000;\cssrgb\c18039\c23922\c28627;\cssrgb\c0\c0\c0;
+\cssrgb\c86667\c6667\c26667;\cssrgb\c0\c52549\c70196;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33100\viewh20200\viewkind0
+\deftab720
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Working with Git on the command line can be a little bit challenging because it's a little bit like a\'a0{\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Black_box"}}{\fldrslt \cf3 \strokec3 black box}}. I mean, how do you know when you should or shouldn't run certain Git commands? Is Git ready for me to run a command yet? What if I run a command but I think it didn't work...how can I find that out? The answer to all of these questions is the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0command!\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 $ git status\uc0\u8236 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 The\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0is our key to the mind of Git. It will tell us what Git is thinking and the state of our repository as Git sees it. When you're first starting out, you should be using the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0command\'a0
+\f2\i all of the time
+\f0\i0 ! Seriously. You should get into the habit of running it after any other command. This will help you learn how Git works and it'll help you from making (possibly) incorrect assumptions about the state of your files/repository.\
+\pard\pardeftab720\sl373\sa200\partightenfactor0
+
+\f3\b\fs28 \cf6 \cb7 \strokec6 QUESTION 1 OF 2\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b0\fs24 \cf8 \cb7 \strokec8 To answer this quiz, make sure you've\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 cd
+\f0 \cf8 \cb7 \strokec8 \uc0\u8236 ed into the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 course-git-blog-project
+\f0 \cf8 \cb7 \strokec8 \uc0\u8236 \'a0project. If you've been following along in this lesson and haven't added any files to this project, then what does running\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf8 \cb7 \strokec8 \uc0\u8236 \'a0display?\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320\partightenfactor0
+\ls1\ilvl0
+\fs21 \cf9 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec9 \uc0\u8232 
+\fs24 \cf8 \cb7 \strokec8 Status: good\cb1 \uc0\u8232 \u8232 
+\fs21 \cf2 \strokec2 \uc0\u8232 \u8232 \cf9 \strokec9 \uc0\u8232 
+\fs24 \cf8 \cb7 \strokec8 On branch master\cb1 \uc0\u8232 \cb7 Your branch is up-to-date with 'origin/master'.\cb1 \uc0\u8232 \cb7 Initial commit\cb1 \uc0\u8232 \cb7 nothing to commit (create/copy files and use "git add" to track)\cb1 \uc0\u8232 \u8232 
+\fs21 \cf2 \strokec2 \uc0\u8232 \u8232 \cf9 \strokec9 \uc0\u8232 
+\fs24 \cf8 \cb7 \strokec8 master branch\cb1 \uc0\u8232 \cb7 Please commit some files\cb1 \uc0\u8232 \u8232 
+\fs21 \cf2 \strokec2 \uc0\u8232 \u8232 
+\fs24 \cb7 On branch master\cb1 \uc0\u8232 \cb7 Your branch is up-to-date with 'origin/master'.\cb1 \uc0\u8232 \cb7 nothing to commit, working directory clean\cb1 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 
+\fs30 \
+\pard\pardeftab720\sl360\qr\partightenfactor0
+
+\f3\b\fs19\fsmilli9750 \cf7 \cb3 \strokec7 SUBMIT
+\f0\b0\fs30 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl533\sa100\partightenfactor0
+
+\f3\b\fs40 \cf8 \strokec8 Git Status Output\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b0\fs24 \cf2 \strokec2 The\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0command will display a lot of information depending on the state of your files, the working directory, and the repository. You don't need to worry too much about these, though...just run\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0and it will display the information you need to know.\
+\pard\pardeftab720\sl400\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://classroom.udacity.com/nanodegrees/nd104-ent/parts/e325d5cc-ccd1-4ca8-a562-7eed09ab76c7/modules/a141ebc6-acee-494b-927f-2016d6fe0f9c/lessons/59288694-18d7-477e-948a-014fd2354293/concepts/ce648229-7d6c-4ad3-805e-af6a77f38fd0#"}}{\fldrslt 
+\fs30 \cf3 \cb7 \strokec3 \
+\pard\pardeftab720\sl400\qc\partightenfactor0
+
+\f2\i\fs24 \cf8 \cb1 \strokec8 An animated gif of the Terminal application. The\'a0
+\f4 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f2 \cf8 \cb1 \strokec8 \uc0\u8236 \'a0command is run in the\'a0
+\f4 \cf4 \cb5 \strokec4 \uc0\u8237 course-git-blog-project
+\f2 \cf8 \cb1 \strokec8 \uc0\u8236 \'a0project.
+\f0\i0 \
+}}\pard\pardeftab720\sl533\sa100\partightenfactor0
+
+\f3\b\fs40 \cf8 \strokec8 Git Status Explanation\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\b0\fs24 \cf2 \strokec2 As you can see in the GIF above, running\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0in the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 course-git-blog-project
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0project produces the following output:\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 On branch master\uc0\u8236 \
+Your branch is up-to-date with 'origin/master'.\uc0\u8236 \
+nothing to commit, working directory clean\uc0\u8236 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 The output tells us two things:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400\partightenfactor0
+\ls2\ilvl0
+\f1 \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u8237 On branch master
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0\'96 this tells us that Git is on the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 master
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0branch. You've got a description of a branch on your terms sheet so this is the "master" branch (which is the default branch). We'll be looking more at branches in lesson 5\
+\ls2\ilvl0
+\f1 \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u8237 Your branch is up-to-date with 'origin/master'.
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0\'96 Because\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git clone
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0was used to copy this repository from another computer, this is telling us if our project is in sync with the one we copied from. We won't be dealing with the project on the other computer, so this line can be ignored.\
+\ls2\ilvl0
+\f1 \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u8237 nothing to commit, working directory clean
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0\'96 this is saying that there are no pending changes.\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+\cf2 Think of this output as the "resting state" (that's not an official description - it's how I like to describe it!). This is the resting state because there are no new files, no changes have been made in files, nothing is in the staging area about to be committed...no change or action is pending, so that's why I like to call it the resting state.\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 So this is what it looks like when running\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0in a repository that already has commits. Let's switch to the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 new-git-project
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0project to see what the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0output will produce.\
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f5\fs36 \cf8 \strokec8 \uc0\u55357 \u56481 
+\f6\i\b  Changes in Git v2.14 
+\f5\i0\b0 \uc0\u55357 \u56481 
+\f6\i\b \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f7\b0\fs24 \cf2 \strokec2 In Git version 2.14, running the\'a0
+\f4 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f7 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0command in an empty directory changed the wording of "Inital commit" to the much clearer "No commits yet". So the output would be:\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f4\fs36 \cf4 \cb5 \strokec4 \uc0\u8237 On branch master\uc0\u8236 \
+\uc0\u8236 \
+No commits yet\uc0\u8236 \
+\uc0\u8236 \
+nothing to commit (create/copy files and use \cf10 \strokec10 "git add"\cf4 \strokec4  to track)\uc0\u8236 \
+\pard\pardeftab720\sl373\sa200\partightenfactor0
+
+\f3\i0\b\fs28 \cf6 \cb7 \strokec6 \uc0\u8236 QUESTION 2 OF 2\cb1 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\b0\fs24 \cf8 \cb7 \strokec8 To answer this quiz, make sure you've\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 cd
+\f0 \cf8 \cb7 \strokec8 \uc0\u8236 ed into the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 new-git-project
+\f0 \cf8 \cb7 \strokec8 \uc0\u8236 \'a0project.\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf8 \cb7 If you've been following along in this lesson and haven't added any files to this project, then what does running\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf8 \cb7 \strokec8 \uc0\u8236 \'a0display?\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320\partightenfactor0
+\ls3\ilvl0
+\fs21 \cf9 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec9 \uc0\u8232 
+\fs24 \cf8 \cb7 \strokec8 Status: good\cb1 \uc0\u8232 \u8232 
+\fs21 \cf2 \strokec2 \uc0\u8232 \u8232 
+\fs24 \cb7 On branch master\cb1 \uc0\u8232 \cb7 Initial commit\cb1 \uc0\u8232 \cb7 nothing to commit (create/copy files and use "git add" to track)\cb1 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 
+\fs21 \cf9 \strokec9 \uc0\u8232 
+\fs24 \cf8 \cb7 \strokec8 master branch\cb1 \uc0\u8232 \cb7 Please commit some files\cb1 \uc0\u8232 \u8232 
+\fs21 \cf2 \strokec2 \uc0\u8232 \u8232 \cf9 \strokec9 \uc0\u8232 
+\fs24 \cf8 \cb7 \strokec8 On branch master\cb1 \uc0\u8232 \cb7 nothing to commit, working directory clean\cb1 \uc0\u8232 \u8232 
+\fs21 \cf2 \strokec2 \uc0\u8232 \u8232 
+\fs30 \
+\pard\pardeftab720\sl360\qr\partightenfactor0
+
+\f3\b\fs19\fsmilli9750 \cf7 \cb3 \strokec7 SUBMIT
+\f0\b0\fs30 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl400\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://classroom.udacity.com/nanodegrees/nd104-ent/parts/e325d5cc-ccd1-4ca8-a562-7eed09ab76c7/modules/a141ebc6-acee-494b-927f-2016d6fe0f9c/lessons/59288694-18d7-477e-948a-014fd2354293/concepts/ce648229-7d6c-4ad3-805e-af6a77f38fd0#"}}{\fldrslt \cf3 \cb7 \strokec3 \pard\pardeftab720\sl400\qc\partightenfactor0
+\cf3 \
+\pard\pardeftab720\sl400\qc\partightenfactor0
+
+\f2\i\fs24 \cf8 \cb1 \strokec8 An animated GIF of the Terminal application. The\'a0
+\f4 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f2 \cf8 \cb1 \strokec8 \uc0\u8236 \'a0command is run in the\'a0
+\f4 \cf4 \cb5 \strokec4 \uc0\u8237 new-git-project
+\f2 \cf8 \cb1 \strokec8 \uc0\u8236 \'a0project.
+\f0\i0 \
+}}\pard\pardeftab720\sl533\sa100\partightenfactor0
+
+\f3\b\fs40 \cf8 \strokec8 Explanation Of Git Status In A New Repo\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\b0\fs24 \cf2 \strokec2 This is the output of running\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0in the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 new-git-project
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0project:\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 $ git status\uc0\u8236 \
+On branch master\uc0\u8236 \
+\uc0\u8236 \
+Initial commit\uc0\u8236 \
+\uc0\u8236 \
+nothing to commit (create/copy files and use \cf10 \strokec10 "git add"\cf4 \strokec4  to track)\uc0\u8236 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 To be completely clear, I haven't made any commits in my project yet. If you have made a commit, then your output should look exactly like that of the course-git-blog-project project.\
+If you compare this to the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0output from the course-git-blog-project project, then you'll see that they're pretty similar. The thing to note that's different is that this output includes the line\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 Initial commit
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 . This is the tiniest bit confusing because there actually aren't any commits in this repository yet! We haven't discussed making a commit yet, but when we do, we will be able to make an initial commit.\
+Wanna have a sneak peak of the next lesson and at the same time prove that there aren't any commits in this repo yet? Great, I knew you did! Try running the command\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git log
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0and check out its response:\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 $ git \cf11 \strokec11 log\cf4 \strokec4 \uc0\u8236 \
+fatal: your current branch \cf10 \strokec10 'master'\cf4 \strokec4  does not have any commits yet\uc0\u8236 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 Well, that's kind of scary looking. "Fatal"? Fortunately, it turns out that just means that the Git program is exiting because it can't find any work to do. Git tells us this as if it were an error, but it's really not a problem. We know we haven't put any commits into this repo yet.\
+It's pretty clear from the response that there aren't any commits!\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 We've just taken a very brief look at the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0command. Remember that the output of\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0will change depending on if files have been added/deleted/modified, what's on the staging index, and the state of the repository. We'll be using the\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0command throughout this entire course, so get comfortable running it!\
+\pard\pardeftab720\sl533\sa100\partightenfactor0
+
+\f3\b\fs40 \cf8 \strokec8 Git Status Recap\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\b0\fs24 \cf2 \strokec2 The\'a0
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 git status
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 \'a0command will display the current status of the repository.\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f1 \cf4 \cb5 \strokec4 \uc0\u8237 $ git status\uc0\u8236 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0 \cf2 \cb1 \strokec2 \uc0\u8236 I can't stress enough how important it is to use this command\'a0
+\f2\i all the time
+\f0\i0 \'a0as you're first learning Git. This command will:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400\partightenfactor0
+\ls4\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 tell us about new files that have been created in the Working Directory that Git hasn't started tracking, yet\
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 files that Git\'a0
+\f2\i is
+\f0\i0 \'a0tracking that have been modified\
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 a whole bunch of other things that we'll be learning about throughout the rest of the course ;-)\
+\pard\pardeftab720\sl533\sa100\partightenfactor0
+
+\f3\b\fs40 \cf8 \strokec8 Helpful Links\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400\partightenfactor0
+\ls5\ilvl0
+\f0\b0\fs24 \cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files"}}{\fldrslt \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Checking the Status of Your Files}}\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\ls5\ilvl0\cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://git-scm.com/docs/git-status"}}{\fldrslt \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 git status docs}}\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\ls5\ilvl0\cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-status"}}{\fldrslt \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 git status Tutorial}}\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+}
